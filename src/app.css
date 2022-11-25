@@ -1,0 +1,107 @@
+h1{
+    text-align: center;
+}
+
+.todoList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin:auto
+} 
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
+.todos .todo:nth-child(odd){
+    background-color: rgb(222, 244, 252);
+}
+
+.todos .todo:nth-child(n){
+    border-top: 0.25px solid lightgray;
+}
+
+.todo:last-child{
+    border-bottom: 0.25px solid lightgray;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 2.5rem;
+    width: 100%;
+}
+
+.todo p{
+    font-size: medium;
+    margin:auto;
+    text-align: left;
+    width: 80%;
+    color: rgb(128, 147, 253);
+}
+
+.todo .deleteButton{
+    background-color: transparent;
+    border: none;
+}
+
+.addNewTodo{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.addNewTodo input{
+    width: 89%;
+    height: 35px;
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+    color: #3489eb;
+    border: 2px solid #ebdc34;
+    border-radius: 0.25rem;
+    margin-right: 5px;
+}
+
+.addNewTodo input:focus {
+   outline-color: #f5b342;
+}
+
+.addNewTodo button{
+    border-radius: 0;
+    border: none;
+    background-color: #03a5fc;
+    width: 45px;
+}
+
+.addNewTodo button:hover{
+    background-color: #5496b9;
+}
+
+.addNewTodo button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.deleteButton svg:hover{
+    fill: rgb(255, 80, 80);
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navBar ul li{
+    margin: 7px;
+}
